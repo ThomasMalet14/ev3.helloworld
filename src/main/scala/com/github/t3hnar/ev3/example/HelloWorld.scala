@@ -7,6 +7,7 @@ object HelloWorld extends App {
   val ev3  = BrickFinder.getLocal.asInstanceOf[EV3]
   val lcd  = ev3.getTextLCD
   val keys = ev3.getKeys
+  println(test)
   lcd.drawString("Hello World", 4, 3)
   lcd.drawString("I'm a Scala app", 1, 4)
   keys.waitForAnyPress
